@@ -1,0 +1,42 @@
+
+{
+    "src_folders" : ["./tests"],
+    "output_folder" : "./reports",
+    "custom_commands_path" : "./custom_commands",
+    "page_objects_path" : "./page_objects",
+    "custom_assertions_path" : "",
+    "globals_path" : "./hooks/global_hook.js",
+    "live_output" : false,
+    "parallel_process_delay" : 10,
+    "disable_colors": false,
+    "test_workers": {
+      "enabled": true,
+      "workers": 10
+    },
+    "selenium" : {
+      "start_process" : true,
+      "server_path" : "./node_modules/selenium-server-standalone-jar/jar/selenium-server-standalone-3.141.5.jar",
+      "log_path" : "",
+      "port" : 4444,
+      "cli_args" : {        
+        "webdriver.chrome.driver" : "./node_modules/chromedriver/bin/chromedriver"
+      }
+    },
+    "test_settings" : {
+      "default" : {
+        "desiredCapabilities": {
+          "name" : "Nightwatch Skeleton - local-chrome",
+          "browserName" : "chrome"
+        },
+        "globals" : {
+          "propertyData" : {
+            "environment":"local-chrome"
+          }
+        },
+        "selenium_host" : "localhost",
+        "selenium" : {
+          "start_process" : true
+        }
+      }
+    }
+}

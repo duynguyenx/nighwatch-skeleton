@@ -17,9 +17,7 @@
 
 # Dependency directories
 node_modules
+package-lock.json
 
 # Run-time test reports
 reports
-
-# DO NOT PUSH
-*.json
